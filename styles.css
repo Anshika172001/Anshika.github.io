@@ -1,0 +1,635 @@
+/* Reset default margin and padding */
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0;
+    align-items: center;
+    padding: 8rem 0;
+}
+.firstsection > div{
+    
+    width: 40% ;
+}
+.leftsection{
+    font-size: 3.5rem;
+    width: 400px 0;
+
+}
+.rightsection{
+    /* margin: 50px 0; */
+    width:80%;
+
+}
+.rightsection img{
+    width: 35rem;
+    height: auto;
+}
+#element{
+    color: rgb(15, 0, 30);
+    font-size: 3rem;
+}
+
+
+body, h1,h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.nav{
+    height: 2rem;
+}
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    word-spacing: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #bfbdef;
+    font-size: 1.3rem;
+}
+
+/* Sections */
+.section {
+    padding: 6rem 0;
+}
+
+/* Home Section */
+#home {
+    background-color: #bfbdef;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Your existing styles */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .left {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul.active {
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding-top: 60px; /* Add space for the fixed header */
+    }
+
+    .firstsection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .firstsection > div {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+.resume-button {
+    display: inline-block;
+    background-color: #4d2f86;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+    background-color: #606b8f;
+}
+/* Your existing styles */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Adjust the image size for smaller screens */
+    .rightsection img {
+        max-width: 80%; /* Reduce the image width for smaller screens */
+        height: auto;
+    }
+}
+
+/* Your existing styles */
+
+/* Your existing styles */
+
+/* Hide Header for Non-PC Screens */
+@media screen and (max-width: 768px) {
+    header {
+        display: none; /* Hide the header for screens with width up to 768px */
+    }
+}
+
+/* Your existing styles */
+
+/* Sticky Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000; /* Ensure the header appears above other content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative; /* Adjust positioning for the header */
+}
+
+
+/* Additional styles for the About Section */
+/* .about {
+    background-color: #ffffff;
+    text-align: center;
+    /* width: auto;
+    height: auto; */
+    /* padding: 4rem 0; */
+/* /    /* margin-bottom: 6rem; */
+
+
+/* .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about-text {
+    max-width: 700px;
+    font-size: xx-large;
+    margin: 0 auto;
+    
+} */ 
+/* Your existing styles */
+
+/* About Section */
+.about {
+    background-color: #f2f2f2;
+    padding: 6rem 0;
+    text-align: center;
+}
+.about h2{
+    font-size: 3.8rem;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row; /* Display children in a row */
+    justify-content: center; /* Center children horizontally */
+    align-items: flex-start; /* Align children to the top */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 6rem;
+}
+
+.about-image img {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.about-text {
+    flex: 1; /* Expand to take available space */
+    text-align: left;
+    font-size: x-large;
+    margin: auto;
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: #bfbdef;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+    background-color: #606b8f;
+}
+
+
+/* Responsive styles for About Section */
+@media screen and (max-width: 768px) {
+    .about-text {
+        padding: 0 1rem;
+    }
+}
+
+/* About Section */
+  .contact {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 4rem;
+    margin: 2rem 0;
+}
+
+ .contact h2 {
+    color: #333;
+    font-size: 3.5rem;
+    /* margin-bottom: 1rem; */
+}
+/* Additional styles for the Education Section */
+/* Additional styles for Education & Experience Section */
+.edu-experience {
+    background-color: #bfbdef;
+    padding-bottom: 10rem;
+
+    /* padding: 4rem 0; */
+    
+
+}
+.edu-experience h2{
+    text-align: center;
+    font-size: 3rem;
+    /* margin-top: auto; */
+}
+.edu-experience h3{
+    font-size: 2.5rem;
+}
+.edu-experience h4{
+    font-size: 1.2rem;
+}
+.edu-experience ul li{
+    font-size: large;
+}
+.education p{
+    font-size: large;
+}
+
+.edu-experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education, .experience {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+/* Add responsive styles as needed */
+@media screen and (max-width: 768px) {
+    .edu-experience-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Additional styles for Skills Section */
+/* Additional styles for Skills Section */
+/* Additional styles for Skills Section */
+
+.max-width h2{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.skills{
+    padding: 6rem;
+}
+.skills .skills-content .column{
+    width: calc(90% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: rgb(127, 32, 119);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 2px solid rgb(127, 32, 119);
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+.skills .skills-content .left a:hover{
+    color: rgb(127, 32, 119);
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    height: 20px;
+    padding: 1rem;
+    align-items: 500px;
+
+}
+.coloumn-right{
+    margin-bottom: 50px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(127, 32, 119);
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .php::before{
+    width: 90%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+.skills-content .right .python::before{
+    width: 80%;
+}
+
+
+
+
+/* Projects Section */
+
+.projects {
+    background-color: #bfbdef;
+    padding: 8rem 0;
+}
+.projects h2{
+    font-size: 3.5rem;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+.projects h2{
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+}
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.projects h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.projects p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #bfbdef;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: #606b8f;
+}
+
+
+/* Your existing styles */
+
+/* Contact Section */
+.contact {
+    background-color: #f2f2f2;
+    padding: 8rem 0;
+    
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.contact-details {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: large;
+}
+
+.contact-details h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: large;
+}
+
+.contact-form h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #6c6b6b;
+    border-radius: 5px;
+    height: auto;
+}
+
+.contact-form .submit-button {
+    background-color: #946fa8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #606b8f;
+}
+
+/* Your existing styles */
+
+/* Social Links */
+.social-links {
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #0a0a0a;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a i {
+    margin-right: 0.5rem;
+}
+
+.social-links a:hover {
+    color: #c9b9d2;
+}
+
+
+/* Responsive Styles
+@media screen and (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    /* .nav-links {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .section {
+        padding: 2rem;
+    }
+
+    /* Adjust other responsive styles as needed */
+/* } */ 
