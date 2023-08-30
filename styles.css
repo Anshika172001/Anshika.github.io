@@ -227,7 +227,7 @@ nav {
 /* Your existing styles */
 
 /* About Section */
-.about {
+/* .about {
     background-color: #f2f2f2;
     padding: 6rem 0;
     text-align: center;
@@ -279,6 +279,64 @@ nav {
 @media screen and (max-width: 768px) {
     .about-text {
         padding: 0 1rem;
+    }
+} */
+.about {
+    background-color: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    max-width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: #bfbdef;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+    background-color: #606b8f;
+}
+.about h2{
+    font-size: 3.8rem;
+    margin-top: 10px;
+}
+@media (min-width: 768px) {
+    /* Apply styling for screens with a minimum width of 768px */
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .about-image {
+        flex: 1;
+        margin-right: 2rem;
+    }
+    
+    .about-text {
+        flex: 1;
+        text-align: left;
     }
 }
 
