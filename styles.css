@@ -281,6 +281,8 @@ nav {
         padding: 0 1rem;
     }
 } */
+
+
 .about {
     background-color: #f2f2f2;
     padding: 4rem 0;
@@ -321,6 +323,7 @@ nav {
 .about h2{
     font-size: 3.8rem;
     margin-top: 10px;
+    text-align: center;
 }
 @media (min-width: 768px) {
     /* Apply styling for screens with a minimum width of 768px */
